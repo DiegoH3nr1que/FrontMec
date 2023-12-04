@@ -8,11 +8,11 @@ const ChartComponent = () => {
     datasets: [
       {
         label: 'Horas estudadas',
-        backgroundColor: 'rgba(75,192,192,0.2)',
-        borderColor: 'rgba(75,192,192,1)',
+        backgroundColor: 'rgba(255, 165, 0 , 0.5)',
+        borderColor: 'rgba(255, 165, 0 ,1)',
         borderWidth: 1,
-        hoverBackgroundColor: 'rgba(75,192,192,0.4)',
-        hoverBorderColor: 'rgba(75,192,192,1)',
+        hoverBackgroundColor: 'rgba(255, 165, 0 ,0.8)',
+        hoverBorderColor: 'rgba(255, 165, 0 ,1)',
         data: [4, 9, 3, 4, 6, 8, 3],
       },
     ],
@@ -42,7 +42,7 @@ const ChartComponent = () => {
   }, [chartData]);
 
   return (
-    <div className="bg-gray-200 w-[50%] h-[60%] p-4 rounded-md shadow-md">
+    <div className="bg-gray-100 w-[50%] h-[30%] p-4 rounded-md shadow-md">
       <h2 className="text-xl font-semibold mb-2 text-black">Gráfico de Horas estudadas por dia</h2>
       <canvas ref={chartRef}></canvas>
     </div>
