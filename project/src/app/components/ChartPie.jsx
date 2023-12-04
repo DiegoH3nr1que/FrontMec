@@ -27,19 +27,12 @@ const ChartComponentPie = () => {
 
   useEffect(() => {
     // Configurações do gráfico
-    const options = {
-      scales: {
-        y: {
-          beginAtZero: true,
-        },
-      },
-    };
+
 
     // Criação do gráfico
     const myChart = new Chart(chartRef.current, {
       type: 'pie',
       data: chartData,
-      options,
     });
 
     // Limpeza ao desmontar o componente
@@ -49,7 +42,7 @@ const ChartComponentPie = () => {
   }, [chartData]);
 
   return (
-    <div className="bg-gray-100 w-[70%] h-[100%] p-4 rounded-md shadow-md">
+    <div className="bg-gray-100 w-[50%] h-[100%] p-4 rounded-md shadow-md">
       <h2 className="text-xl font-semibold mb-2 text-black">Gráfico de dias estudados no mês</h2>
       <canvas ref={chartRef}></canvas>
     </div>
