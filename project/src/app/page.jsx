@@ -12,7 +12,7 @@ const Home = () => {
         <div className="text-yellow-400 ml-2 md:ml-4">Dashboards</div>
       </header>
 
-      <div className="flex flex-row bg-gray-200 p-10 rounded gap-5 ">
+      <div className="flex flex-row bg-gray-200 p-10 rounded justify-around ">
         <Chart className="bg-purple-500 text-white rounded-lg p-4 h-[70%]" title="Tempo de estudo por dia" />
         <div className=" flex flex-col gap-10">
           <div className="flex h-[30%] text-center gap-5">
