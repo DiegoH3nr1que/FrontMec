@@ -21,7 +21,7 @@ const Home = () => {
   }, []);
 
   return (
-    <div className="rounded bg-white h-[140vh] w-full p-4 md:p-8 lg:p-12">
+    <div className="rounded bg-white h-[160vh] w-full p-4 md:p-8 lg:p-12">
       <header className="flex h-1/5 md:h-1/6 items-center ml-4 md:ml-10 text-black text-3xl md:text-5xl mb-5">
         <img src="./ADSMEC_logo.png" className="h-12 w-12" alt="Logo" />
         <div className="text-yellow-400 ml-2 md:ml-4">Dashboards</div>
@@ -36,15 +36,11 @@ const Home = () => {
         <div className=" flex flex-col gap-10">
           <div className="flex h-[30%] text-center gap-5">
             <Card
-              title="Tempo de Estudo na semana"
-              initialTimeValue={10}
               colorClass="bg-black text-yellow-400"
               widthClass="w-full md:w-64"
               heightClass="h-[100%]"
             />
             <Card
-              title="Tempo de Estudo no dia"
-              initialTimeValue={1}
               colorClass="bg-yellow-400 text-black"
               widthClass="w-full md:w-64"
               heightClass="h-[100%]"
